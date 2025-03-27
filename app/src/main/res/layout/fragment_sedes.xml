@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragmentos.SedesFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/vsedTxtVerSedes"
+                android:gravity="center"
+                android:text="@string/vsedTxtVerSedes"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/forum_icon"
+                android:layout_width="55dp"
+                android:layout_height="66dp"
+                android:src="@drawable/ollita" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ocnombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vsedTxtnombreSede"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/ocdireccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vsedTxtDireccion"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/ochorario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vsedTxtHorario"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/forum_icon2"
+                android:layout_width="55dp"
+                android:layout_height="66dp"
+                android:src="@drawable/ollita" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ocnombre2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vsedTxtnombreSede2"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/ocdireccion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vsedTxtDireccion2"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/ochorario2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vsedTxtHorario2"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

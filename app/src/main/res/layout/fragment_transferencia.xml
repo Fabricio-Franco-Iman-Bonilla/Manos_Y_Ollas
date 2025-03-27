@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main"
+    tools:context=".fragmentos.TransferenciaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ic_flotante"
+                android:layout_width="41dp"
+                android:layout_height="43dp"
+                android:src="@drawable/ic_volver"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/transTxtTransferencia"
+                android:gravity="center"
+                android:text="@string/transTxtTransferencia"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <ImageButton
+                android:id="@+id/btn_yape"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/yape"
+                android:background="@null"
+                android:layout_marginLeft="20dp" />
+
+            <ImageButton
+                android:id="@+id/btn_plin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/plin"
+                android:background="@null"
+                android:layout_marginLeft="20dp" />
+
+            <ImageButton
+                android:id="@+id/btn_visa"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/visa"
+                android:background="@null"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/donTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="¡Apoyemos a Manos y Ollas para seguir alimentando corazones! En nuestra comunidad, Manos y Ollas no solo entrega platos de comida, sino también esperanza a quienes más lo necesitan."
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</FrameLayout>

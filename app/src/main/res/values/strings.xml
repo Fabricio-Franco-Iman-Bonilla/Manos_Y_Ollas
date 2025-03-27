@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Manos y Ollas</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="btnRegistrate">Registro</string>
+
+    <string name="logTxtCorreo">Ingresa tu Correo</string>
+    <string name="logTxtContrasena">Ingresa tu Contraseña</string>
+    <string name="logBtnIngresar">Ingresar</string>
+    <string name="logBtnGoogle">Ingresar con Google</string>
+    <string name="logChkRecordar">Recordar sesión</string>
+    <string name="logLblOlvidaste">¿Olvidaste tu contraseña?</string>
+    <string name="logLblCopyRight">Derechos Reservados - CNEV2 - UPN 2024</string>
+    <string name="desc_temporal">Descripcion Temporal</string>
+    <!--ICONOS-->
+    <string name="icperfil">Perfil</string>
+    <string name="icUbicaciones">Ubicaciones</string>
+    <string name="ichoma">Inicio</string>
+    <string name="icGrupos">Grupos</string>
+    <string name="icDonativos">Donación</string>
+
+
+    <!--STRINGS ACTIVITY REGISTRAR-->
+    <string name="regLblTitulo">Crear Cuenta</string>
+    <string name="regTxtDni">DNI</string>
+    <string name="regTxtNombre">Nombre</string>
+    <string name="regTxtApellido">Apellidos</string>
+    <string name="regTxtFechaNac">Fecha de Nacimiento</string>
+    <string name="regTxtCorreo">Correo </string>
+    <string name="regRbtSinDefinir">Sin Definir </string>
+    <string name="regRbtFemenino">Femenino</string>
+    <string name="regRbtMasculino">Masculino</string>
+    <string name="regTxtContraseña">Contraseña</string>
+    <string name="regTxtContraseña2">Confirmar Contraseña</string>
+    <string name="regTxtTerminos">Terminos y Condiciones</string>
+    <string name="regTxtBtnCrear">Crear</string>
+    <string name="regTxtBtnRegresar">Regresar</string>
+
+    <!--STRINGS PRINCIPAL VIEW-->
+
+    <string name="prinTxtVerPerfil">Ver Perfil</string>
+    <string name="prinTxtDonaciones">Donaciones</string>
+    <string name="prinTxtVerSedes">Ver Sedes</string>
+    <string name="prinTxtSobreNosotros">Sobre Nosotros</string>
+    <string name="prinTxtForos">Ver Foros</string>
+    <string name="prinTxtBienvenido">Bienvenid@ </string>
+
+    <!--STRINGS DE PERFIL -->
+    <string name="vperTxtVerPerfil">Perfil</string>
+    <string name="vpertxtNombre">Lalito Ruiz Caceres</string>
+    <string name="vpertxtCorreo">Novato@upn.pe</string>
+    <string name="vperbtnEditPer">Editar Perfil</string>
+    <string name="vperbtnCerrarSesion">Cerrar Sesión</string>
+    <string name="vpertxtHisDona">Historial Donativos</string>
+    <string name="vpertxtAjustes">Ajustes</string>
+    <string name="vpertxtNotif">Notificaciones</string>
+    <string name="editPerTxtBtnEditar">Editar</string>
+
+    <!--STRINGS DE VER Inicio -->
+    <string name="vsedTxtInicio">Inicio</string>
+
+    <!--STRINGS DE VER SEDES -->
+    <string name="vsedTxtVerSedes">Direccion de Ollas Comunes Afiliadas</string>
+    <string name="vsedTxtnombreSede">Olla Comun 1</string>
+    <string name="vsedTxtDireccion">Av. El Sol 461, San Juan de Lurigancho 15434</string>
+    <string name="vsedTxtHorario">Horario de Atencion: 12 am - 4pm  </string>
+
+    <string name="vsedTxtnombreSede2">Olla Comun 2</string>
+    <string name="vsedTxtDireccion2">Av. Los Duraznos 382, San Juan de Lurigancho 15419</string>
+    <string name="vsedTxtHorario2">Horario de Atencion: 12 am - 4pm  </string>
+
+    <!--STRINGS DE DONACIONES -->
+    <string name="donTxtDonaciones">Donaciones</string>
+    <string name="btnAceptar">Aceptar</string>
+
+
+    <!--STRINGS DE SOBRE NOSOTROS -->
+    <string name="snosTxtSobreNosotros">Sobre Nosotros</string>
+    <string name="sobnosbtnInicio">Sobre Nosotros</string>
+    <string name="sobnosdescTxtInicio">En Manos y Ollas, creemos en la fuerza de la solidaridad y el poder de la comunidad. Nuestra misión es apoyar a las ollas comunes, un pilar fundamental para muchas familias en situación de vulnerabilidad en Perú. \n Por ello, hemos creado esta plataforma con el objetivo de conectar a personas generosas como tú con las áreas que requieren ayuda urgente. A través de Manos y Ollas, te ofrecemos la oportunidad de donar, colaborar y apoyar de manera directa a las ollas comunes de tu comunidad o de cualquier rincón de Lima Metropolitana.\n Tu contribución puede marcar una gran diferencia en la vida de quienes más lo necesitan. Juntos, podemos construir un futuro más solidario y esperanzador.</string>
+    <!--STRINGS DE FOROS -->
+    <string name="forTxtForos">Canales</string>
+    <string name="forTxtOllas">Ollas Comunes</string>
+    <!--Strings Cuentas -->
+
+    <string name="tvTituloPrincipal"> Ayuda a nuestras Ollas
+                     Comunes  </string>
+    <string name="tvAgradecimiento"> Gracias por tu apoyo !! Todas las donaciones serán utilizadas para continuar preparando alimentos y apoyando a las familias en necesidad. ¡Cada aporte hace la diferencia!"
+         </string>
+
+
+    <!--STRINGS TRANSFERENCIA -->
+    <string name="transTxtTransferencia">Transferencia</string>
+
+    <string name="transTxtYape">Donar con Yape</string>
+    <string name="transTxtPlin">Donar con Plin</string>
+    <string name="transTxtVisa">Donar con Visa</string>
+
+    <!--SUMINISTRO-->
+    <string name="sumTxtSuministro">Suministro</string>
+
+    <!--MENU SEDES-->
+    <string name="frgmenSTxtLista">Lista</string>
+    <string name="frgmenSTxtMapa">Mapa</string>
+
+    <!--CONFIRMAR SUMINISTRO-->
+    <string name="conTxtSuministro">Confirmar Suministro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--AJUSTES-->
+    <string name="ajusLblPreferencias">Preferencias</string>
+    <string name="ajusChkNotificaciones">Recibir Notificaciones</string>
+    <string name="ajusLblSonido">Control de Sonido</string>
+    <string name="ajusBtnAplicar">Aplicar</string>
+    <string name="ajusBtnRestaurar">Restaurar</string>
+    <string name="ajusChkTemaOscuro">Activar/Desactivar Tema Oscuro</string>
+
+    <!--EDITAR PERFIL-->
+    <string name="editPerLblEditarPerfil">Editar Perfil</string>
+    <string name="editPerTxtDni">DNI</string>
+    <string name="editPerTxtNombre">Nombre</string>
+    <string name="editPerTxtApellido">Apellidos</string>
+    <string name="editPerTxtFechaNac">Fecha de Nacimiento</string>
+    <string name="editPerTxtCorreo">Correo </string>
+    <string name="editPerRbtSinDefinir">Sin Definir </string>
+    <string name="editPerRbtFemenino">Femenino</string>
+    <string name="editPerRbtMasculino">Masculino</string>
+    <string name="editPerTxtContraseña">Contraseña</string>
+    <string name="editPerTxtContraseña2">Confirmar Contraseña</string>
+    <string name="editPerTxtTerminos">Terminos y Condiciones</string>
+    <string name="editPerTxtBtnCrear">Crear</string>
+    <string name="editPerTxtBtnRegresar">Regresar</string>
+
+    <!--FARGMENTO SEDES-->
+    <string name="menuSedeLista">Lista</string>
+    <string name="menuSedeMapa">Mapa</string>
+
+    <!--PERFIL CHATS-->
+    <string name="chatPerfilNombre">Olla Comun SJL</string>
+    <string name="chatPerfilDescripcion">Descripcion</string>
+    <string name="chatPerfilTexDescripcion">Bienvenidos al grupo de la Olla Común, donde nos organizamos para preparar y compartir alimentos con quienes más lo necesitan. ¡Tu colaboración, ya sea con tiempo o donaciones, marca la diferencia!</string>
+    <string name="chatPerfNotificacionTex">Notificaciones</string>
+    <string name="chatPerfDonacionTex">Donacion</string>
+    <string name="chatPerfAjustesTex">Ajustes</string>
+    <string name="chatPerfAprobarPubliTex">Aprobar Publicaciones</string>
+    <string name="chatPerfAgreDonaText">Agregar Donaciones</string>
+    <string name="chatPerfSalirText">Salir del Canal</string>
+
+    <!--HISTORIAL DE DONACIONES-->
+    <string name="HistDonText">Historial de Donaciones</string>
+    <string name="HistDonMes">Setiembre 2024</string>
+    <string name="HistDonTipo1">Donación de Efectivo</string>
+    <string name="HistDonTipo2">Donación de Suministro</string>
+    <string name="HistDonMonto">Monto: S/50</string>
+    <string name="HistDonMetodo">Metodo: Plin</string>
+    <!-- drawable/circular_image.xml -->
+
+
+
+
+    <string name="client_id">58612300742-7lr3ob1rvunfubnprgo7e3povkecb1vl.apps.googleusercontent.com</string>
+
+</resources>

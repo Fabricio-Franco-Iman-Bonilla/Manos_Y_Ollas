@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.ChatFragment">
+
+    <!-- Layout superior con el título y el botón de regresar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flecha_40"
+            android:contentDescription="Botón para regresar"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/chatTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="Chat Title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+
+    <!-- Contenedor principal que incluye RecyclerView y la barra de entrada -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- RecyclerView para los mensajes del chat -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_chat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="70dp"
+            android:padding="10dp"
+            android:scrollbars="vertical" />
+
+        <!-- Barra de entrada de mensaje -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Botón de emojis -->
+            <ImageButton
+                android:id="@+id/buttonEmonjis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="Emojis"
+                android:src="@drawable/emonji_40"
+                android:tint="@color/filtro"/>
+
+            <!-- Campo de texto para escribir el mensaje -->
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Escribe un mensaje..."
+                android:maxLines="6"
+                android:padding="10dp" />
+
+            <!-- Botón para adjuntar archivos -->
+            <ImageButton
+                android:id="@+id/buttonClip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:src="@drawable/clip_40"
+                android:tint="@color/filtro"/>
+
+            <!-- Botón de la cámara -->
+            <ImageButton
+                android:id="@+id/buttonCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@drawable/camera_40"
+                android:tint="@color/filtro"/>
+
+            <!-- Botón para enviar el mensaje -->
+            <ImageButton
+                android:id="@+id/buttonSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="Enviar mensaje"
+                android:src="@drawable/enviar_40"
+                android:tint="@color/filtro"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

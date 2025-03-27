@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/foritos"
+    android:layout_height="wrap_content"
+    tools:context=".fragmentos.ForosFragment">
+
+    <LinearLayout
+        android:id="@+id/ContenedorLista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/forTxtForos"
+                android:gravity="center"
+                android:text="@string/forTxtForos"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:layout_marginTop="20dp"
+
+                />
+        </RelativeLayout>
+        <!-- activity_main.xml -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- RecyclerView que muestra la lista de elementos -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.PrincipalActivity">
+
+    <TextView
+        android:id="@+id/prinTxtBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/prinTxtBienvenido"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/recycler"
+        app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <fragment
+            android:id="@+id/frgMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.manosyollas.fragmentos.MenuFragment"
+            tools:layout="@layout/fragment_menu"/>
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">-->
+
+
+        <!-- Primera fila
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/prinBtnVerPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_perfil"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/prinTxtVerPerfil"
+                    />
+
+                <TextView
+                    android:id="@+id/prinTxtVerPerfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prinTxtVerPerfil"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/prinBtnDonaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_donativo"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/prinTxtDonaciones"
+                    />
+
+                <TextView
+                    android:id="@+id/prinTxtDonaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prinTxtDonaciones"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/prinBtnVerSedes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sedess"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/prinTxtVerSedes"
+                    />
+
+                <TextView
+                    android:id="@+id/prinTxtVerSedes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prinTxtVerSedes"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>-->
+
+        <!-- Segunda fila
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/prinBtnSobreNosotros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/prinTxtSobreNosotros"
+                    />
+
+                <TextView
+                    android:id="@+id/prinTxtSobreNosotros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prinTxtSobreNosotros"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+
+                <ImageButton
+                    android:id="@+id/prinBtnForos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_foros"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/prinTxtForos"
+                    />
+
+                <TextView
+                    android:id="@+id/prinTxtForos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prinTxtForos"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>-->
+
+</RelativeLayout>

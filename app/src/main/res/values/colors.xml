@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="green">#B4FFCA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="naranjaCarga">#BA6E57</color>
+    <color name="btnNaranja">#D27700</color>
+    <color name="lblOlvidaste">#CD5C08</color>
+    <color name="inputColor">#E6E0E9</color>
+    <color name="fondoMenu">#959595</color>
+    <color name="red">#F21313</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColor">#000000</color>
+    <color name="buttonColor">#6200EE</color>
+    <color name="radiobt">#F44336</color>
+    <color name="transparente">#00FFFF</color>
+    <color name="blue">#0629ED</color>
+
+    <color name="orange">#D27700</color>
+    <color name="sobnos_ini">#999999</color>
+
+    <color name="color_inicio_txt_sobnos">#9A7E6F</color>
+    <color name="card_color">#FFA07A</color>
+    <color name="filtro">#80FF4500</color>
+    <color name="hover_color">#D3D3D3</color>
+
+
+
+</resources>

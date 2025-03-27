@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Producto -->
+    <TextView
+        android:id="@+id/producto_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Producto"
+        android:textSize="16sp"
+        android:layout_weight="1" />
+
+    <!-- Cantidad -->
+    <TextView
+        android:id="@+id/producto_cantidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"/>
+
+    <!-- Olla Común -->
+    <TextView
+        android:id="@+id/olla_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Olla Común"
+        android:textSize="16sp"
+        android:layout_weight="1"
+        android:layout_marginLeft="16dp"/>
+</LinearLayout>

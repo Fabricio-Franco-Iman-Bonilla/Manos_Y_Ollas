@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:id="@+id/espacioolla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/forum_icon"
+            android:layout_width="55dp"
+            android:layout_height="66dp"
+            android:src="@drawable/ollita" />
+
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titollaubi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Olla Comun Manos de dios "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/zonaollaubi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zona: Zarate"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/ubiollaubi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Jr. Villac Umo 832"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
