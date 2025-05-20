@@ -1,258 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".actividades.RegistrateActivity">
+    android:padding="16dp">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginVertical="10dp"
-        android:orientation="vertical"
-        android:background="@color/backgroundColor">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/regLblTitulo"
-            android:gravity="center_horizontal"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:shadowColor="@android:color/black"
-            />
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="12dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary"
-            >
-            <EditText
-                android:id="@+id/Username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Usuario"
-                android:inputType="text"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        </com.google.android.material.textfield.TextInputLayout>
-        <Spinner
-            android:id="@+id/regCboTipoDocumento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            android:paddingVertical="10dp"/>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="12dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary"
-            >
-            <EditText
-                android:id="@+id/regTxtDni"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/regTxtDni"
-                android:maxLength="8"
-                android:inputType="number"
-                />
+        <EditText android:id="@+id/Username"
+            android:hint="Username" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
+        <Spinner android:id="@+id/regCboTipoDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary">
-            <EditText
-                android:id="@+id/regTxtNombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/regTxtNombre"
-                android:maxLength="100"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary">
-            <EditText
-                android:id="@+id/regTxtApellido"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/regTxtApellido"
-                android:maxLength="100"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary">
-            <EditText
-                android:id="@+id/regTxtTelefono"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Telefono"
-                android:maxLength="100"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
+        <EditText android:id="@+id/regTxtDni" android:hint="Document Number"
+            android:inputType="number" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText android:id="@+id/regTxtNombre"
+            android:hint="First Name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary">
-            <EditText
-                android:id="@+id/regTxtCorreo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/regTxtCorreo"
-                android:maxLength="100"
-                android:inputType="textEmailAddress"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary">
-            <EditText
-                android:id="@+id/regTxtFechanac"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/regTxtFechaNac"
-                android:clickable="false"
-                android:focusable="false"
-                android:maxLength="10"
-                android:inputType="date"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <RadioGroup
-            android:id="@+id/regRgpSexo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton
-                android:id="@+id/regRbtSinDefinir"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:checked="true"
-                android:text="@string/regRbtSinDefinir"
-                android:buttonTint="@color/radiobt"/>
-            <RadioButton
-                android:id="@+id/regRbtFemenino"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/regRbtFemenino"
-                android:buttonTint="@color/radiobt"/>
-            <RadioButton
-                android:id="@+id/regRbtMasculino"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/regRbtMasculino"
-                android:buttonTint="@color/radiobt"/>
+            android:layout_height="wrap_content"/>
 
-        </RadioGroup>
+        <EditText android:id="@+id/regTxtApellido"
+            android:hint="Last Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/regTxtTelefono"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/regTxtCorreo"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
         <Spinner
             android:id="@+id/regCboDistritos"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            android:paddingVertical="10dp"/>
+            android:layout_height="wrap_content"/>
         <Spinner
             android:id="@+id/regCboOllaComun"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            android:paddingVertical="10dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="¿no aparece tu olla comun?"
-            android:gravity="left"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/blue"
-            android:shadowColor="@android:color/black"
-            />
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            app:passwordToggleEnabled="true"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary">
-            <EditText
-                android:id="@+id/regTxtContraseña"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/regTxtContraseña"
-                android:maxLength="100"
-                android:inputType="textPassword"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            app:passwordToggleEnabled="true"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary">
-        <EditText
-            android:id="@+id/regTxtContraseña2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/regTxtContraseña2"
-            android:maxLength="100"
-            android:inputType="textPassword"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <CheckBox
-            android:id="@+id/regChkTerminos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
+            android:layout_height="wrap_content"/>
 
-            android:text="@string/regTxtTerminos"
-            />
-        <LinearLayout
+        <EditText android:id="@+id/regTxtContraseña"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/regBtnCrear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/regBtnCrear"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="5dp"
-                android:layout_weight="1"
-                android:text="@string/regTxtBtnCrear"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:padding="12dp"/>
-            <Button
-                android:id="@+id/regBtnRegresar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-             android:layout_marginStart="5dp"
-                android:layout_weight="1"
-                android:text="@string/regTxtBtnRegresar"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:padding="12dp"/>
-        </LinearLayout>
-
-
+            android:text="Register"
+            android:layout_marginTop="16dp"/>
     </LinearLayout>
-
-
-</androidx.core.widget.NestedScrollView>
+</ScrollView>
