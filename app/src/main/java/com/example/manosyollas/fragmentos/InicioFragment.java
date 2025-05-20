@@ -9,10 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.manosyollas.R;
+import com.example.manosyollas.actividades.DetectionActivity;
 import com.example.manosyollas.actividades.ImageAdapter;
 import com.example.manosyollas.actividades.ImageViewActivity;
+import com.example.manosyollas.actividades.RegistrateActivity;
 
 import java.util.ArrayList;
 
@@ -21,6 +24,7 @@ public class InicioFragment extends Fragment {
     // Variables para los parámetros opcionales
     private String mParam1;
     private String mParam2;
+    TextView txtbienvenida;
 
     public InicioFragment() {
         // Required empty public constructor
@@ -82,6 +86,12 @@ public class InicioFragment extends Fragment {
                 );
                 startActivity(intent, options.toBundle()); // Iniciar la nueva actividad con la transición
             }
+        });
+
+        txtbienvenida = view.findViewById(R.id.donTxtInicio);
+        txtbienvenida.setOnClickListener(v-> {
+            Intent deteccion = new Intent(this.getContext(), DetectionActivity.class);
+            startActivity(deteccion);
         });
 
         return view;
