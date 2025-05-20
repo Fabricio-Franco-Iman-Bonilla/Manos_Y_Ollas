@@ -21,7 +21,7 @@
 
     <!--STRINGS ACTIVITY REGISTRAR-->
     <string name="regLblTitulo">Crear Cuenta</string>
-    <string name="regTxtDni">DNI</string>
+    <string name="regTxtDni">Número de Documento</string>
     <string name="regTxtNombre">Nombre</string>
     <string name="regTxtApellido">Apellidos</string>
     <string name="regTxtFechaNac">Fecha de Nacimiento</string>
