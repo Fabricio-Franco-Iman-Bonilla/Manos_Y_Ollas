@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     FirebaseAuth auth;
     GoogleSignInClient googleSignInClient;
 
-    private static final String URL_LOGIN = "http://manosyollas.atwebpages.com/services/InicioSesion.php";
+    private static final String URL_LOGIN = "http://manosyollas.atwebpages.com/services/Login_Usuario.php";
     private static final String URL_MOSTRAR_ID = "http://manosyollas.atwebpages.com/services/MostrarID.php";
 
     private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
@@ -172,17 +172,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void iniciarSesion(String txtCorreo,String txtContrasena, boolean recordar) {
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
-        String clavehash=hashPassword(txtContrasena);
-        params.put("correo", txtCorreo);
-        params.put("clave", clavehash);
+        //String clavehash=hashPassword(txtContrasena);
+        params.put("email", txtCorreo);
+        params.put("password", txtContrasena);
 
         client.post(URL_LOGIN, params, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try {
-                    if (response.has("idUsuario")) {
+                    if (response.has("success") && response.getBoolean("success")) {
+                        JSONObject usuario = response.getJSONObject("usuario");
+
+                        int idUsuario = usuario.getInt("usuarioId"); // ✅ CORREGIDO
                         // Guarda el ID de usuario en SharedPreferences
-                        obtenerIdUsuario(txtCorreo, response.getInt("idUsuario")); // Pasa el idUsuario a obtenerIdUsuario
+                        obtenerIdUsuario(txtCorreo, idUsuario); // Pasa el idUsuario a obtenerIdUsuario
 
                         // Inicio de sesión exitoso, redirigir a la siguiente Activity
                         Intent principal = new Intent(LoginActivity.this, MenuActivity.class);
