@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".actividades.MenuActivityIA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Imagen de perfil -->
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/images"
+            android:scaleType="centerCrop" />
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhiteWolf"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Correo -->
+        <TextView
+            android:id="@+id/txtCorreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhiteWolf@gmail.com"
+            android:textSize="14sp" />
+
+        <!-- Rol -->
+        <TextView
+            android:id="@+id/txtRol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olla Común"
+            android:textSize="14sp"
+            android:textColor="#888888" />
+
+        <!-- Botones: Ver perfil y Ver olla común -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="90dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Ver Perfil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="90dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnOlla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver Olla Común" />
+
+        </LinearLayout>
+
+        <!-- Sección de íconos -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:paddingHorizontal="20dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:useDefaultMargins="true">
+
+            <!-- Agregar producto -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:onClick="abrirAgregarProducto"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/iamenuadd"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Agregar Producto" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:text="Agregar Producto" />
+            </LinearLayout>
+
+            <!-- Ver Inventario -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:onClick="abrirInventario"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/iamenuinv"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Ver Inventario" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:text="Ver Inventario" />
+            </LinearLayout>
+
+            <!-- Ver movimientos -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:onClick="abrirMovimientos"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/iamenumovi"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Ver Movimientos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:text="Ver Movimientos" />
+            </LinearLayout>
+
+            <!-- Ajustes -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:onClick="abrirAjustes"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/iamenuajuste"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Ajustes" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingTop="4dp"
+                    android:text="Ajustes" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
