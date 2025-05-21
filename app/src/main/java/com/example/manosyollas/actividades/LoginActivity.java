@@ -188,7 +188,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         obtenerIdUsuario(txtCorreo, idUsuario); // Pasa el idUsuario a obtenerIdUsuario
 
                         // Inicio de sesión exitoso, redirigir a la siguiente Activity
-                        Intent principal = new Intent(LoginActivity.this, MenuActivity.class);
+                        Intent principal = new Intent(LoginActivity.this, MenuActivityIA.class);
                         principal.putExtra("id", 2);
                         startActivity(principal);
                         finish();

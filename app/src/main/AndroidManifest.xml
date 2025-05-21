@@ -64,6 +64,9 @@
             android:name=".actividades.CuentasActivity"
             android:exported="false" />
         <activity
+            android:name=".actividades.MenuActivityIA"
+            android:exported="false" />
+        <activity
             android:name=".actividades.HistDonacionActivity"
             android:exported="false" />
         <activity

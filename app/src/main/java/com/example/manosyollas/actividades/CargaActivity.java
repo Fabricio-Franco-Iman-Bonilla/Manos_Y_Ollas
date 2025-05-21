@@ -46,7 +46,7 @@ ProgressBar barCarga;
                 FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
                 if(isLoggedIn || currentUser != null) {
 
-                    Intent menu = new Intent(getApplicationContext(), MenuActivity.class);
+                    Intent menu = new Intent(getApplicationContext(), MenuActivityIA.class);
                     menu.putExtra("nombre","Cachimbo UPN");
                     menu.putExtra("id", 2);
                     startActivity(menu);
